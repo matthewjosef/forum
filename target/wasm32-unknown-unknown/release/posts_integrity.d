@@ -1,0 +1,1 @@
+/home/matthewjosef/forum7/target/wasm32-unknown-unknown/release/posts_integrity.wasm: /home/matthewjosef/forum7/dnas/forum/zomes/integrity/posts/src/comment.rs /home/matthewjosef/forum7/dnas/forum/zomes/integrity/posts/src/lib.rs /home/matthewjosef/forum7/dnas/forum/zomes/integrity/posts/src/post.rs
