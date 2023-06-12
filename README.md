@@ -1,4 +1,4 @@
-# Forum 7
+# Forum
 
 ## Environment Setup
 
