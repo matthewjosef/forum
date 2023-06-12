@@ -60,9 +60,6 @@ async function fetchPosts() {
 {:else if hashes.length === 0}
 <span>No posts found.</span>
 {:else}
-<div>
-  <CreatePost></CreatePost>
-</div>
 <div style="display: flex; flex-direction: column">
   {#each hashes as hash}
   <div style="margin-bottom: 8px;" on:click={() => handleSelectPost(hash)}>

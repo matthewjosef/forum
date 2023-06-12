@@ -64,12 +64,6 @@ async function fetchPost() {
 
 </script>
 <button on:click={handleBack}>Back</button>
-{#if !loading && !error}
-  <div>
-    <CreateComment {postHash}></CreateComment>
-  </div>
-{/if}
-
 {#if loading}
 <div style="display: flex; flex: 1; align-items: center; justify-content: center">
   <mwc-circular-progress indeterminate></mwc-circular-progress>
@@ -91,6 +85,9 @@ async function fetchPost() {
   <div style="display: flex; flex-direction: row; margin-bottom: 16px">
     <span style="margin-right: 4px"><strong>Content:</strong></span>
     <span style="white-space: pre-line">{ post.content }</span>
+  </div>
+  <div>
+    <CreateComment {postHash}></CreateComment>
   </div>
 
 <div>

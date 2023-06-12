@@ -42,6 +42,9 @@
   {:else}
     <div id="content" style="display: flex; flex-direction: column; flex: 1;">
       {#if selectedPostHash === null}
+      <div id="content" style="display: flex; flex-direction: column; flex: 1;">
+        <CreatePost />
+      </div>
         <AllPosts on:select-post={handleSelectPost}></AllPosts>
       {:else}
         <PostDetail {selectedPostHash} on:back={handleBack}></PostDetail>
